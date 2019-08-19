@@ -21,7 +21,6 @@
 	String manufacturer = request.getParameter("manufacturer");
 	String category = request.getParameter("category");
 	String unitsInStock = request.getParameter("unitsInStock");
-	String condition = request.getParameter("condition");
 	
 	Integer price;
 	
@@ -50,7 +49,6 @@
 	newProduct.setDescription(description);
 	newProduct.setManufacturer(manufacturer);
 	newProduct.setUnitsInStock(stock);
-	newProduct.setCondition(condition);
 	newProduct.setFilename(fileName);
 	
 	dao.addProduct(newProduct);

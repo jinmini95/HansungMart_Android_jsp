@@ -25,8 +25,8 @@
 				for(int i = 0; i < listOfProducts.size(); i++){
 					Product product = listOfProducts.get(i);
 			%>
-			<div class="col-md-4">
-			<img src="d:/upload/<%=product.getFilename()%>" style="width: 100%">
+			<div class="col-md-4" style="height: 30%">
+			<img src="resources/images/<%=product.getFilename()%>" style="width: 100%">
 				<h3><%=product.getPname() %></h3>
 				<p><%=product.getDescription() %></p>
 				<p><%=product.getUnitPrice() %>원</p>

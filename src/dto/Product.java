@@ -12,8 +12,12 @@ public class Product implements Serializable {
 	private String manufacturer;	//제조사
 	private String category;	//분류
 	private long unitsInStock;	//재고 수
-	private String condition;	//신상품  or 중고품 or 재생품
 	private String filename;	//이미지 파일명
+	private int quantity;	//장바구니에 담은 개수
+	//잠만 생각해보니 이거슨 물건이 아니야 나중에 옮길 것@
+	private String userPhoneNumber;	//사용자 핸드폰 번호
+	private String userName;	//사용자 이름
+	private String userPassword;	//사용자 비밀번호
 	
 	public Product() {
 		super();
@@ -65,16 +69,35 @@ public class Product implements Serializable {
 	public void setUnitsInStock(long unitsInStock) {
 		this.unitsInStock = unitsInStock;
 	}
-	public String getCondition() {
-		return condition;
-	}
-	public void setCondition(String condition) {
-		this.condition = condition;
-	}
 	public String getFilename() {
 		return filename;
 	}
 	public void setFilename(String filename) {
 		this.filename = filename;
+	}
+	public int getQuantity() {
+		return quantity;
+	}
+	public void setQuantity(int quantity) {
+		this.quantity = quantity;
+	}
+	//여기서 부터는 다른 곳에 옮겨야 함
+	public String getUserPhoneNumber() {
+		return userPhoneNumber;
+	}
+	public void setUserPhoneNumber(String userPhoneNumber) {
+		this.userPhoneNumber = userPhoneNumber;
+	}
+	public String getUserName() {
+		return userName;
+	}
+	public void setUserName(String userName) {
+		this.userName = userName;
+	}
+	public String getUserPassword() {
+		return userPassword;
+	}
+	public void setUserPassword(String userPassword) {
+		this.userPassword = userPassword;
 	}
 }
